@@ -23,6 +23,7 @@ public class Calculator {
         return (double) a / b;
     }
 
+
     // Modulus
     public int modulus(int a, int b) {
         if (b == 0) {
@@ -30,4 +31,13 @@ public class Calculator {
         }
         return a % b;
     }
+
+    // Square root
+    public double sqrt(double a) {
+        if (a < 0) {
+            throw new IllegalArgumentException("Cannot take square root of negative number!");
+        }
+        return Math.sqrt(a);
+    }
+
 }
